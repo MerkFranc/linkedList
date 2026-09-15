@@ -88,6 +88,13 @@ public class LinkedList
         Console.WriteLine();
     }
 
+    
+    /// <summary>
+    /// Since list is already sorted in ascending order, I use a pionter and a while loop to run through the list.
+    /// I check the current value and the next value, and if they are the same I change the .next value to .next.next value.
+    /// If they are different I advance to the next node. 
+    /// The loop exists when current.next == null which is the end of the list.
+    /// </summary>
     public void RemoveDuplicates()
     {
         Node? current = head;
@@ -108,6 +115,12 @@ public class LinkedList
         tail = current;
     }
 
+    /// <summary>
+    /// int total keeps a running total
+    /// A pointer 'current' and a while loop is used to run through the list
+    /// At every node do: total = total * 2 + node.value. This gets the decimal value.
+    /// return total at the end
+    /// </summary>
     public int GetDecimalValue()
     {
         int total = 0;
@@ -122,6 +135,14 @@ public class LinkedList
         return total;
     }
 
+    /// <summary>
+    /// Pass in a decimal value as a parameter
+    /// Use a while loop to keep going until the decimal number reaches 0
+    /// While the number is greater than zero mod by 2 to get the remainder which is the binary digit
+    /// Prepend the remainder becuase it is the most significant bit
+    /// divide the number by 2 
+    /// While loop ends when number is not greater than 0
+    /// </summary>
     public void DecimalToBinary(int decimalNumber)
     {
         // Special case for 0
