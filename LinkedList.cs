@@ -27,6 +27,13 @@ public class LinkedList
         length = 1; 
     }
 
+    public LinkedList()
+    {
+        head = null;
+        tail = null;
+        length = 0;
+    }
+
     public void Append(int value)
     {
         Node newNode = new Node(value);
@@ -52,6 +59,23 @@ public class LinkedList
         }
     }
 
+    public void Prepend(int value)
+    {
+        Node newNode = new Node(value);
+
+        if (length == 0)
+        {
+            head = newNode;
+            tail = newNode;
+        }
+        else
+        {
+            newNode.next = head;
+            head = newNode;
+        }
+        length ++;
+    }
+
     public void PrintList()
     {
         Node? temp = head;
@@ -62,32 +86,6 @@ public class LinkedList
             temp = temp.next;
         }
         Console.WriteLine();
-    }
-
-    public void PrintAll()
-    {
-        if (length == 0)
-        {
-            Console.WriteLine("Head: null");
-            Console.WriteLine("Tail: null");
-        }
-        else
-        {
-            Console.WriteLine("Head: " + head?.value);
-            Console.WriteLine("Tail: " + tail?.value);
-        }
-
-        Console.WriteLine("Length: " + length);
-        Console.WriteLine("\nLinked List:");
-
-        if (length == 0)
-        {
-            Console.WriteLine("empty");
-        }
-        else
-        {
-            PrintList();
-        }
     }
 
     public void RemoveDuplicates()
@@ -108,5 +106,38 @@ public class LinkedList
         }
 
         tail = current;
+    }
+
+    public int GetDecimalValue()
+    {
+        int total = 0;
+        Node? current = head;
+
+        while (current != null)
+        {
+            total = total * 2 + current.value;
+            current = current.next;
+        }
+
+        return total;
+    }
+
+    public void DecimalToBinary(int decimalNumber)
+    {
+        // Special case for 0
+        if (decimalNumber == 0)
+        {
+            Prepend(0);
+            return;
+        }
+
+        while (decimalNumber > 0)
+        {
+            int remainder = decimalNumber % 2;
+
+            Prepend(remainder);
+
+            decimalNumber /= 2;
+        }
     }
 }
