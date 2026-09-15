@@ -1,0 +1,14 @@
+/Users/frank/Coding/Snow/cs2420/linkedList/bin/Debug/net10.0/linkedList
+/Users/frank/Coding/Snow/cs2420/linkedList/bin/Debug/net10.0/linkedList.deps.json
+/Users/frank/Coding/Snow/cs2420/linkedList/bin/Debug/net10.0/linkedList.runtimeconfig.json
+/Users/frank/Coding/Snow/cs2420/linkedList/bin/Debug/net10.0/linkedList.dll
+/Users/frank/Coding/Snow/cs2420/linkedList/bin/Debug/net10.0/linkedList.pdb
+/Users/frank/Coding/Snow/cs2420/linkedList/obj/Debug/net10.0/linkedList.GeneratedMSBuildEditorConfig.editorconfig
+/Users/frank/Coding/Snow/cs2420/linkedList/obj/Debug/net10.0/linkedList.AssemblyInfoInputs.cache
+/Users/frank/Coding/Snow/cs2420/linkedList/obj/Debug/net10.0/linkedList.AssemblyInfo.cs
+/Users/frank/Coding/Snow/cs2420/linkedList/obj/Debug/net10.0/linkedList.csproj.CoreCompileInputs.cache
+/Users/frank/Coding/Snow/cs2420/linkedList/obj/Debug/net10.0/linkedList.dll
+/Users/frank/Coding/Snow/cs2420/linkedList/obj/Debug/net10.0/refint/linkedList.dll
+/Users/frank/Coding/Snow/cs2420/linkedList/obj/Debug/net10.0/linkedList.pdb
+/Users/frank/Coding/Snow/cs2420/linkedList/obj/Debug/net10.0/linkedList.genruntimeconfig.cache
+/Users/frank/Coding/Snow/cs2420/linkedList/obj/Debug/net10.0/ref/linkedList.dll
