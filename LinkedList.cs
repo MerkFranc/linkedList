@@ -114,6 +114,9 @@ public class LinkedList
 
         tail = current;
     }
+    // <time complexity>
+    // O(n)
+
 
     /// <summary>
     /// int total keeps a running total
@@ -134,6 +137,8 @@ public class LinkedList
 
         return total;
     }
+    // Time Complexity
+    // O(n)
 
     /// <summary>
     /// Pass in a decimal value as a parameter
@@ -161,4 +166,6 @@ public class LinkedList
             decimalNumber /= 2;
         }
     }
+    // Time Complexity
+    // O(log n)
 }
